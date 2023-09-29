@@ -15,6 +15,12 @@ app.use(express.text());
 // Configuración de CORS
 app.use(cors());
 
+const alquilerRouter = require("./routes/alquiler");
+const ventaRouter = require("./routes/venta")
+
+app.use(alquilerRouter)
+app.use(ventaRouter)
+
 // controlar ruta
 app.get("/", (req, res) => {
   res.send("Proyecto inmobiliaria");
