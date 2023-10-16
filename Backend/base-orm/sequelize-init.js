@@ -30,7 +30,7 @@ const alquilers = sequelize.define(
       allowNull: false,
     },
     Precio: {
-      type: DataTypes.TEXT,
+      type: DataTypes.FLOAT,
       allowNull: false,
       validate: {
         notEmpty: {
@@ -40,7 +40,7 @@ const alquilers = sequelize.define(
       },
     },
     Moneda: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.TEXT,
       allowNull: false,
       validate: {
         notEmpty: {
